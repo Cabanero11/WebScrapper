@@ -1,0 +1,40 @@
+Titulo: Senior Python Developer
+Compania: Payne, Roberts and Davis
+Localizacion: Stewartbury, AA
+
+Titulo: Software Engineer (Python)
+Compania: Garcia PLC
+Localizacion: Ericberg, AE
+
+Titulo: Python Programmer (Entry-Level)
+Compania: Moss, Duncan and Allen
+Localizacion: Port Sara, AE
+
+Titulo: Python Programmer (Entry-Level)
+Compania: Cooper and Sons
+Localizacion: West Victor, AE
+
+Titulo: Software Developer (Python)
+Compania: Adams-Brewer
+Localizacion: Brockburgh, AE
+
+Titulo: Python Developer
+Compania: Rivera and Sons
+Localizacion: East Michaelfort, AA
+
+Titulo: Back-End Web Developer (Python, Django)
+Compania: Stewart-Alexander
+Localizacion: South Kimberly, AA
+
+Titulo: Back-End Web Developer (Python, Django)
+Compania: Jackson, Ali and Mckee
+Localizacion: New Elizabethside, AA
+
+Titulo: Python Programmer (Entry-Level)
+Compania: Mathews Inc
+Localizacion: Robertborough, AP
+
+Titulo: Software Developer (Python)
+Compania: Moreno-Rodriguez
+Localizacion: Martinezburgh, AE
+
