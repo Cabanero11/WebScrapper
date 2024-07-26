@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+from selenium import webdriver
 
 # Solo funciona con paginas estaticas que devuelvan .html 
 url = 'https://realpython.github.io/fake-jobs/'
@@ -34,7 +35,7 @@ try:
             localizacion = trabajo.find('p', class_='location').text.strip()
             file.write(f'Titulo: {titulo}\n')
             file.write(f'Compania: {compañia}\n')
-            file.write(f'Localizacion: {localizacion}\n\n')
+            file.write(f'Localizacion: {localizacion}\n\n') 
 except FileNotFoundError as e:
     print(f'Error -> {e}')
 
