@@ -1,9 +1,10 @@
 import requests
-import os
 from bs4 import BeautifulSoup
 
 # Solo funciona con paginas estaticas que devuelvan .html 
 url = 'https://realpython.github.io/fake-jobs/'
+
+termino_busqueda = input("Introduce el término de búsqueda: ").lower()
 
 pagina = requests.get(url)
 
@@ -15,7 +16,7 @@ trabajos_post = trabajos.find_all('div', class_='card-content')
 
 # Filtro que tenga python PyThoN (todo lowercase asi se consigue todo)
 python_trabajos = trabajos.find_all(
-    'h2', string=lambda texto:'python' in texto.lower()
+    'h2', string=lambda texto: termino_busqueda in texto.lower()
 )
 
 # Conseguir el elementos 3 arriba del h2 (el titulo)
@@ -37,4 +38,4 @@ try:
 except FileNotFoundError as e:
     print(f'Error -> {e}')
 
-    print("Scrappeacion guardada en 'scrap.txt'")
+print("Scrappeacion guardada en 'scrap.txt'")
