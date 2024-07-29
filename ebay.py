@@ -239,7 +239,7 @@ response = session.get("https://www.ebay.com/itm/393531906094")
 item = parse_product(response)
 item['variants'] = parse_variants(response)
 
-resultados = scrape_search('iphone 14 pro max')
+resultados = scrape_search('Portatil gaming')
 
 def guardar_json():
     # Guardar los resultados en un archivo JSON
