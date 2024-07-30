@@ -14,6 +14,8 @@ import json
 
 from parsel import Selector
 
+# Codigo obtenido de
+# https://scrapfly.io/blog/how-to-scrape-ebay/
 
 session = httpx.AsyncClient(
     # for our HTTP headers we want to use a real browser's default headers to prevent being blocked
@@ -239,7 +241,7 @@ response = session.get("https://www.ebay.com/itm/393531906094")
 item = parse_product(response)
 item['variants'] = parse_variants(response)
 
-resultados = scrape_search('Portatil gaming')
+resultados = scrape_search('playstation 5')
 
 def guardar_json():
     # Guardar los resultados en un archivo JSON

@@ -11,17 +11,14 @@ class PythonOrgSearch(unittest.TestCase):
     def setUp(self):
         self.driver = webdriver.Edge()
 
-    def test_search_in_python_org(self):
+    def test_cabanero(self):
         driver = self.driver
-        driver.get("http://www.python.org")
-        self.assertIn("Python", driver.title)
-        elem = driver.find_element(By.NAME, "q")
-        elem.send_keys("pycon")
-        elem.send_keys(Keys.RETURN)
-        self.assertNotIn("No results found.", driver.page_source)
-
-    
-
+        driver.get('https://cabanero.es/')
+        self.assertIn('Tornillo', driver.title)
+        elemento = driver.find_element(By.NAME, 'q')
+        elemento.send_keys('tornillo')
+        elemento.send_keys(Keys.RETURN)
+        self.assertNotIn("Sin resultados.", driver.page_source)
 
     def tearDown(self):
         self.driver.close()
@@ -53,10 +50,13 @@ def backmarket():
             headers=headers,
             data=data,
         )
-        a=response.json()
+
+        a = response.json()
         print(a)
 
+
 if __name__ == "__main__":
-    #unittest.main()
-    backmarket()
+    unittest.main()
+    #backmarket()
+    
     
